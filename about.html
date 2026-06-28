@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Alaa Ahmad</title>
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Computer Engineering Graduate & Full-Stack Developer Portfolio - Alaa Ahmad"
+    />
+    <meta
+      name="keywords"
+      content="Alaa Ahmad, علاء أحمد, Full-Stack Developer, Computer Engineering, Portfolio, Birzeit University, Palestine"
+    />
+    <meta name="author" content="Alaa Ahmad" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/AlaaAhmad_logo.png" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <!-- Font Awesome CDN for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation Header -->
+    <header class="header-div">
+      <div class="nav-div container">
+        <!-- Logo Image Link -->
+        <a href="index.html" class="logo-link">
+          <img
+            src="images/AlaaAhmad_logo.png"
+            alt="Alaa Ahmad Logo"
+            class="nav-logo-img"
+          />
+        </a>
+        <nav class="nav-links" aria-label="Main Navigation">
+          <div><a href="index.html" data-i18n="navWorks">My Works</a></div>
+          <div>
+            <a href="about.html" class="active" data-i18n="navAbout"
+              >About Me</a
+            >
+          </div>
+        </nav>
+        <div class="controls">
+          <button id="theme-toggle" aria-label="Toggle Theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <button id="lang-toggle" aria-label="Toggle Language">
+            <i class="fa-solid fa-globe"></i>
+            <span data-i18n="langText">EN/AR</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content container about-container">
+      <!-- About Section -->
+      <section class="about-content" aria-labelledby="about-heading">
+        <div class="profile-area">
+          <img src="images/me.jpg" alt="Alaa Ahmad" class="profile-img" />
+          <h1 id="about-heading" data-i18n="aboutMeTitle">About Me</h1>
+        </div>
+        <p data-i18n="aboutBio">
+          Results-driven Computer Engineering graduate from Birzeit University
+          and certified Full-Stack Developer. I possess hands-on experience in
+          building scalable web structures and implementing responsive web
+          architectures with modern front-end frameworks.
+        </p>
+
+        <h3 data-i18n="skillsTitle">Technical Proficiencies</h3>
+        <div class="skills-container">
+          <span class="skill-tag">JavaScript (ES6+)</span>
+          <span class="skill-tag">Python (Django/Flask)</span>
+          <span class="skill-tag">Node.js / React</span>
+          <span class="skill-tag">Data Structures & OOP</span>
+          <span class="skill-tag">MySQL / MongoDB</span>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section" aria-labelledby="contact-heading">
+        <h2 id="contact-heading" data-i18n="contactTitle">Get In Touch</h2>
+        <p data-i18n="contactPrompt">
+          Feel free to reach out for collaborations or opportunities!
+        </p>
+        <div class="contact-list">
+          <!-- Email -->
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope contact-icon"></i>
+            <strong data-i18n="contactEmail">Email:</strong>
+            <a href="mailto:alaa.ahmad.dev@gmail.com"
+              >alaa.ahmad.dev@gmail.com</a
+            >
+          </div>
+          <!-- LinkedIn -->
+          <div class="contact-item">
+            <i class="fa-brands fa-linkedin contact-icon"></i>
+            <strong data-i18n="contactLinkedIn">LinkedIn:</strong>
+            <a href="https://linkedin.com/in/alaa-mahmad" target="_blank"
+              >Alaa Ahmad</a
+            >
+          </div>
+          <!-- GitHub -->
+          <div class="contact-item">
+            <i class="fa-brands fa-github contact-icon"></i>
+            <strong data-i18n="contactGitHub">GitHub:</strong>
+            <a href="https://github.com/alaaMahmad" target="_blank"
+              >alaaMahmad</a
+            >
+          </div>
+          <!-- Location -->
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot contact-icon"></i>
+            <strong data-i18n="contactLocation">Location:</strong>
+            <span data-i18n="myLocation">Qalqilya, Palestine</span>
+          </div>
+          <!-- Phone -->
+          <div class="contact-item">
+            <i class="fa-solid fa-phone contact-icon"></i>
+            <strong data-i18n="contactPhone">Phone:</strong> +970 566456079
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alaa Ahmad | Portfolio</title>
+
+    <meta
+      name="description"
+      content="Computer Engineering Graduate & Full-Stack Developer Portfolio - Alaa Ahmad"
+    />
+    <meta
+      name="keywords"
+      content="Alaa Ahmad, علاء أحمد, Full-Stack Developer, Computer Engineering, Portfolio, Birzeit University, Palestine"
+    />
+    <meta name="author" content="Alaa Ahmad" />
+
+    <link rel="icon" type="image/png" href="images/AlaaAhmad_logo.png" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Noscript fallback -->
+    <noscript>
+      <div
+        style="
+          background: #e11d48;
+          color: white;
+          text-align: center;
+          padding: 12px;
+          font-family: sans-serif;
+          font-weight: bold;
+        "
+      >
+        Please enable JavaScript to experience the full features of this
+        portfolio. / الرجاء تفعيل الجافا سكريبت لتصفح الموقع بالكامل.
+      </div>
+    </noscript>
+
+    <!-- Navigation Header -->
+    <header class="header-div">
+      <div class="nav-div container">
+        <a href="index.html" class="logo-link">
+          <img
+            src="images/AlaaAhmad_logo.png"
+            alt="Alaa Ahmad Logo"
+            class="nav-logo-img"
+          />
+        </a>
+        <nav class="nav-links" aria-label="Main Navigation">
+          <div>
+            <a href="index.html" class="active" data-i18n="navWorks"
+              >My Works</a
+            >
+          </div>
+          <div><a href="about.html" data-i18n="navAbout">About Me</a></div>
+        </nav>
+        <div class="controls">
+          <button id="theme-toggle" aria-label="Toggle Theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <button id="lang-toggle" aria-label="Toggle Language">
+            <i class="fa-solid fa-globe"></i>
+            <span data-i18n="langText">EN/AR</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero container">
+      <h1 data-i18n="heroTitle">Hi, I'm Alaa Ahmad</h1>
+      <p data-i18n="heroSubtitle">
+        Computer Engineering Graduate & Full-Stack Developer
+      </p>
+    </section>
+
+    <!-- Main Content (Featured Projects) -->
+    <main class="main-content container">
+      <h2 class="section-title" data-i18n="sectionWorksTitle">
+        Featured Projects
+      </h2>
+      <div class="projects-grid">
+        <!-- Project 1 (Making Connections) -->
+        <article class="project-card">
+          <div class="project-img-wrapper">
+            <img
+              src="images/profile-project.png"
+              alt="Making Connections"
+              class="project-img"
+            />
+          </div>
+          <div class="project-info">
+            <h3 data-i18n="p1Title">Making Connections</h3>
+            <p data-i18n="p1Desc">
+              An interactive profile dynamic dashboard using JavaScript.
+            </p>
+            <span class="tags">HTML5, CSS3, JavaScript (DOM)</span>
+            <div class="project-links">
+              <a
+                href="https://github.com/alaaMahmad/pootcamp_javaScript/tree/master/fourth_discussion/Making%20Connections"
+                target="_blank"
+                class="github-link"
+              >
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a
+                href="https://alaaMahmad.github.io/pootcamp_javaScript/fourth_discussion/Making%20Connections/"
+                target="_blank"
+                class="demo-link"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span data-i18n="liveDemo">Live Demo</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 (Palestine Weather) -->
+        <article class="project-card">
+          <div class="project-img-wrapper">
+            <img
+              src="images/PalestineWeather.png"
+              alt="Palestine Weather"
+              class="project-img"
+            />
+          </div>
+          <div class="project-info">
+            <h3 data-i18n="p2Title">Palestine Weather</h3>
+            <p data-i18n="p2Desc">
+              A responsive weather forecast dashboard with live temperature
+              conversion.
+            </p>
+            <span class="tags">HTML5, CSS3, JavaScript (DOM)</span>
+            <div class="project-links">
+              <a
+                href="https://github.com/alaaMahmad/pootcamp_javaScript/tree/master/fourth_discussion/DojoWeather"
+                target="_blank"
+                class="github-link"
+              >
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a
+                href="https://alaaMahmad.github.io/pootcamp_javaScript/fourth_discussion/DojoWeather/"
+                target="_blank"
+                class="demo-link"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span data-i18n="liveDemo">Live Demo</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 (Calculator) -->
+        <article class="project-card">
+          <div class="project-img-wrapper">
+            <img
+              src="images/calculator.png"
+              alt="Calculator"
+              class="project-img"
+            />
+          </div>
+          <div class="project-info">
+            <h3 data-i18n="p3Title">Interactive Calculator</h3>
+            <p data-i18n="p3Desc">
+              A functional grid-layout web calculator with evaluation error
+              boundaries.
+            </p>
+            <span class="tags">HTML5, CSS3 (Grid), JavaScript</span>
+            <div class="project-links">
+              <a
+                href="https://github.com/alaaMahmad/Grids-apps-projects/tree/master/calculator"
+                target="_blank"
+                class="github-link"
+              >
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a
+                href="https://alaaMahmad.github.io/Grids-apps-projects/calculator/"
+                target="_blank"
+                class="demo-link"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span data-i18n="liveDemo">Live Demo</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 (Global Weather App) -->
+        <article class="project-card">
+          <div class="project-img-wrapper">
+            <img
+              src="images/WeatherApp.png"
+              alt="Global Weather App"
+              class="project-img"
+            />
+          </div>
+          <div class="project-info">
+            <h3 data-i18n="p4Title">Global Weather App</h3>
+            <p data-i18n="p4Desc">
+              A dynamic weather app fetching remote data from REST APIs via
+              Fetch.
+            </p>
+            <span class="tags">HTML5, CSS3, JavaScript (REST API)</span>
+            <div class="project-links">
+              <a
+                href="https://github.com/alaaMahmad/Grids-apps-projects/tree/master/Weather%20App"
+                target="_blank"
+                class="github-link"
+              >
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a
+                href="https://alaaMahmad.github.io/Grids-apps-projects/Weather%20App/"
+                target="_blank"
+                class="demo-link"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span data-i18n="liveDemo">Live Demo</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5 (2D Arcade Shooter Game) -->
+        <article class="project-card">
+          <div class="project-img-wrapper">
+            <img
+              src="images/gameProject.png"
+              alt="2D Arcade Shooter Game"
+              class="project-img"
+            />
+          </div>
+          <div class="project-info">
+            <h3 data-i18n="p5Title">2D Arcade Shooter Game</h3>
+            <p data-i18n="p5Desc">
+              An advanced 2D arcade shooter built on HTML5 Canvas using
+              Object-Oriented JS modules.
+            </p>
+            <span class="tags">HTML5 Canvas, ES6 Modules, OOP JavaScript</span>
+            <div class="project-links">
+              <a
+                href="https://github.com/alaaMahmad/Grids-apps-projects/tree/master/game_project"
+                target="_blank"
+                class="github-link"
+              >
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a
+                href="https://alaaMahmad.github.io/Grids-apps-projects/game_project/"
+                target="_blank"
+                class="demo-link"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span data-i18n="liveDemo">Live Demo</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
