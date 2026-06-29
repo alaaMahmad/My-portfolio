@@ -1,6 +1,4 @@
-/* ==========================================================================
-   1. Global Reset & Theme Variables
-   ========================================================================== */
+/* 1. Global Reset & Theme Variables */
 * {
     margin: 0px;
     padding: 0px;
@@ -36,25 +34,21 @@ body {
     color: var(--text-primary);
 }
 
-/* ==========================================================================
-   2. Structural Layout Styles
-   ========================================================================== */
+ /* 2. Structural Layout Styles */
 .container {
     width: 90%;
     max-width: 1100px;
     margin: 0px auto;
 }
 
-/* ==========================================================================
-   3. Navigation Header
-   ========================================================================== */
+ /* 3. Navigation Header */
 .header-div {
     background-color: var(--bg-surface);
     border-bottom: 1px solid var(--border-color);
     padding: 6px 0px;
     position: sticky;
     top: 0px;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .nav-div {
@@ -76,7 +70,6 @@ body {
     width: auto;
     display: block;
     object-fit: contain;
-    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.06));
     transition: transform 0.2s ease;
 }
 
@@ -125,9 +118,7 @@ body {
     font-size: 14px;
 }
 
-/* ==========================================================================
-   4. Hero Section
-   ========================================================================== */
+ /* 4. Hero Section */
 .hero {
     padding: 64px 0px 32px 0px;
     text-align: center;
@@ -151,9 +142,7 @@ body {
     border-bottom: 2px solid var(--accent);
 }
 
-/* ==========================================================================
-   5. Projects Grid & Cards
-   ========================================================================== */
+ /* 5. Projects Grid & Cards */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -173,7 +162,8 @@ body {
 
 .project-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0px 10px 15px -3px var(--shadow-color);
+    box-shadow: 0px 10px 15px -3px var(--shadow-color); 
+/* box-shadow: Horizontal Offset,Vertical Offset,Blur Radius,Spread Radius,Shadow Color*/
 }
 
 .project-img-wrapper {
@@ -258,9 +248,7 @@ body {
     color: var(--accent);
 }
 
-/* ==========================================================================
-   6. About & Profile Section
-   ========================================================================== */
+ /* 6. About & Profile Section */
 .about-container {
     padding-top: 32px;
     display: flex;
@@ -305,9 +293,7 @@ body {
     border: 1px solid var(--border-color);
 }
 
-/* ==========================================================================
-   7. Contact Section
-   ========================================================================== */
+/* 7. Contact Section */
 .contact-section {
     padding: 32px;
     border-radius: 8px;
@@ -341,4 +327,25 @@ body {
 
 .contact-icon {
     color: var(--accent);
+}
+
+
+.btn-download-nav {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--accent);
+    color: #ffffff !important; 
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0px 2px 4px var(--shadow-color);
+}
+
+.btn-download-nav:hover {
+    transform: translateY(-1px);
+    box-shadow: 0px 4px 12px var(--shadow-color);
 }

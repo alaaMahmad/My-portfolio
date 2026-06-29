@@ -1,11 +1,11 @@
-// --- DOM Target Selectors ---
+// DOM Target Selectors
 document.addEventListener("DOMContentLoaded", () => {
   const themeToggle = document.getElementById("theme-toggle");
   const langToggle = document.getElementById("lang-toggle");
   const htmlRoot = document.documentElement;
   const bodyRoot = document.body;
 
-  // --- State Caching & Initial Load Handling ---
+  // State Caching & Initial Load Handling
   const cachedTheme = localStorage.getItem("portfolio-theme") || "light";
   const cachedLang = localStorage.getItem("portfolio-lang") || "en";
 
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Init Language
   setLanguage(cachedLang);
 
-  // --- Theme Toggle Click Listener ---
+  // Theme Toggle Click Listener
   if (themeToggle) {
     themeToggle.addEventListener("click", () => {
       const isDark = bodyRoot.classList.toggle("dark");
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // --- Language Toggle Click Listener ---
+  // Language Toggle Click Listener
   if (langToggle) {
     langToggle.addEventListener("click", () => {
       const currentLang = htmlRoot.getAttribute("lang") || "en";
@@ -67,9 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-/* ==========================================================================
-   Bilingual Dictionary (Dictionary Object)
-   ========================================================================== */
+// Dictionary (Dictionary Object)
 const translations = {
   en: {
     navWorks: "My Works",
@@ -112,6 +110,7 @@ const translations = {
     contactPhone: "Phone:",
     contactLinkedIn: "LinkedIn:",
     contactGitHub: "GitHub:",
+    downloadCV: "MY CV",
     liveDemo: "Live Demo",
   },
   ar: {
@@ -154,6 +153,7 @@ const translations = {
     contactPhone: "الهاتف:",
     contactLinkedIn: "لينكد إن:",
     contactGitHub: "جيت هاب:",
+    downloadCV: "سيرتي الذاتية",
     liveDemo: "معاينة حية",
   },
 };
